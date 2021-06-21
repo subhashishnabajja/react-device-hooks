@@ -1,6 +1,6 @@
 # react-device-hooks
 
-> 
+>
 
 [![NPM](https://img.shields.io/npm/v/react-device-hooks.svg)](https://www.npmjs.com/package/react-device-hooks) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -13,19 +13,23 @@ npm install --save react-device-hooks
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import * as React from "react";
 
-import { useMyHook } from 'react-device-hooks'
+import { useMyHook } from "react-device-hooks";
 
 const Example = () => {
-  const example = useMyHook()
+  const { width, height, orientation } = useScreen();
   return (
     <div>
-      {example}
+      <p>Device width = {width}</p>
+      <p>Device height = {height}</p>
+      <p>Device orientation = {orientation}</p>
     </div>
-  )
-}
+  );
+};
 ```
+
+The `useScreen` hook return a object, which contains the height, width and orientation angle of the client screen.
 
 ## License
 
