@@ -4,11 +4,20 @@
   "description": "",
   "author": "subhashishnabajja",
   "license": "MIT",
-  "repository": "subhashishnabajja/react-device-hooks",
+  "homepage": "https://github.com/subhashishnabajja/react-device-hooks#readme",
+  "repository": "https://github.com/subhashishnabajja/react-device-hooks",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "jsnext:main": "dist/index.es.js",
+  "bugs": {
+    "url": "https://github.com/subhashishnabajja/react-device-hooks/issues"
+  },
+  "keywords": [
+    "react",
+    "screen",
+    "utilities"
+  ],
   "engines": {
     "node": ">=8",
     "npm": ">=5"
