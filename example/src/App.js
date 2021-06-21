@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import { useMyHook } from 'react-device-hooks'
+import { useScreen } from "react-device-hooks";
 
 const App = () => {
-  const example = useMyHook()
+  const { width, height, orientation } = useScreen();
   return (
     <div>
-      {example}
+      <p>Device width = {width}</p>
+      <p>Device height = {height}</p>
+      <p>Device orientation = {orientation}</p>
     </div>
-  )
-}
-export default App
+  );
+};
+export default App;
