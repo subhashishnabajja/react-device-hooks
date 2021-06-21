@@ -15,7 +15,7 @@ npm install --save react-device-hooks
 ```tsx
 import * as React from "react";
 
-import { useMyHook } from "react-device-hooks";
+import { useScreen } from "react-device-hooks";
 
 const Example = () => {
   const { width, height, orientation } = useScreen();
