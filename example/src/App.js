@@ -5,10 +5,10 @@ import { useScreen } from "react-device-hooks";
 const App = () => {
   const { width, height, orientation } = useScreen();
   return (
-    <div>
-      <p>Device width = {width}</p>
-      <p>Device height = {height}</p>
-      <p>Device orientation = {orientation}</p>
+    <div className='container'>
+      <h1>Device width = {width}</h1>
+      <h1>Device height = {height}</h1>
+      <h1>Device orientation = {orientation}</h1>
     </div>
   );
 };
