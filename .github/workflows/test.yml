@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [hooks/useScreen-2]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   build:
