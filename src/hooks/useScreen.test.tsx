@@ -19,7 +19,6 @@ describe("useScreen", () => {
 
     act(() => {
       window.resizeTo(500, 500);
-      console.log(window.innerWidth);
     });
 
     expect(result.current.width).toBe(500);
@@ -38,7 +37,6 @@ describe("useScreen", () => {
 
     act(() => {
       window.resizeTo(1000, 1000);
-      console.log(window.innerWidth);
     });
 
     expect(result.current.width).toBe(1000);
