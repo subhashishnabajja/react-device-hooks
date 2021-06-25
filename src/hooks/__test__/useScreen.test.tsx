@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react-hooks";
-import { useScreen } from "./useScreen";
+import { useScreen } from "../useScreen";
 import matchMediaPolyfill from "mq-polyfill";
 
 matchMediaPolyfill(window);
