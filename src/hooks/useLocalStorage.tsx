@@ -1,12 +1,20 @@
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
-export const useLocalStorage = <T,>(item: T, key: string) => {
-  const [data, setData] = useState(
+export type useLocalStorageType = <T>(
+  item: T,
+  key: string
+) => [T, Dispatch<SetStateAction<T>>, () => void];
+
+export const useLocalStorage: useLocalStorageType = <T,>(
+  item: T,
+  key: string
+) => {
+  const [data, setData] = useState<T>(
     localStorage.getItem(key)
       ? JSON.parse(localStorage.getItem(key) as string)
       : item
   );
-  const resetStorage = (key: string) => {
+  const resetStorage = () => {
     return localStorage.removeItem(key);
   };
 

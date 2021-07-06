@@ -5,10 +5,15 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^16.0.0",
+    "@types/react": "^17.0.13",
+    "@types/react-dom": "^17.0.8",
     "react": "file:../node_modules/react",
+    "react-device-hooks": "file:..",
     "react-dom": "^16.9.0",
     "react-scripts": "^3.0.1",
-    "react-device-hooks": "file:.."
+    "typescript": "^3.9.10"
   },
   "scripts": {
     "start": "react-scripts start",
